@@ -16,7 +16,7 @@ container_status=$?
 case $cmd in
   create)
 
-  #validates if the container is already created. if so exits with the error.
+  #Validates if the container is already created. if so exits with the error.
   if [ $container_status -eq 0 ]; then
 		echo 'Container already exists'
 		exit 1
@@ -28,14 +28,14 @@ case $cmd in
     exit 1
   fi
 
-  #creates a new container using psql image with name called jrvs-psql.
-  #assigns postgre password with the $3 and dbname with $2 of the Cli argument.
+  #Creates a new container using psql image with name called jrvs-psql.
+  #Assigns postgre password with the $3 and dbname with $2 of the Cli argument.
   docker run --name jrvs-psql -e POSTGRES_PASSWORD=$db_password -d -v $db_username:/var/lib/postgresql/data -p 5432:5432 postgres:9.6-alpine
 	exit $?
 	;;
 
   start|stop)
-  #checks if the instance status equals 1; else exits with container has not been created error.
+  #Checks if the instance status equals 1; else exits with container has not been created error.
   if [ $container_status -eq 1 ]; then
     echo 'container is not created'
     exit 1
@@ -47,7 +47,7 @@ case $cmd in
 	;;
 
   *)
-  #this code executes if the user specifies apart from start,stop or create operation.
+  #This code executes if the user specifies apart from start,stop or create operation.
 	echo 'Illegal command'
 	echo 'Commands: start|stop|create'
 	exit 1

@@ -28,9 +28,10 @@ create)
         exit 1
     fi
 
-    #Creates a new container using psql image with name called jrvs-psql.
-    #Assigns postgre password with the $3 and dbname with $2 of the Cli argument.
-    docker run --name jrvs-psql -e POSTGRES_PASSWORD=$db_password -d -v $db_username:/var/lib/postgresql/data -p 5432:5432 postgres:9.6-alpine
+    #volume creation with the name pgdata
+    docker volume create pgdata
+    #Creates a new container using psql image with name called jrvs-psql.Assigns postgre password with the $3 and dbname with $2 of the Cli argument.
+    docker run --name jrvs-psql -e POSTGRES_PASSWORD=$db_password -d -v pgdata:/var/lib/postgresql/data -p 5432:5432 postgres:9.6-alpine
     exit $?
     ;;
 

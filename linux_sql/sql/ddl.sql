@@ -10,7 +10,7 @@ CREATE TABLE if not exists PUBLIC.host_info (
     cpu_architecture varchar not null,
     cpu_model varchar not null,
     cpu_mhz real not null,
-    l2_cache integer not null,
+    l2_cache varchar not null,
     total_mem integer not null,
     "timestamp" timestamptz not null
 );

@@ -14,7 +14,7 @@ The Monitoring Agent Program was developed to help the LCA (The Jarvis Linux Clu
 5. Improvements(Future updates on the Project)
 # Quick Start
 Kindly follow the steps to install the Project and run the Monitoring Agent:
-1. -   On GitHub.com, navigate to the main page of the repository.
+1. On GitHub.com, navigate to the main page of the repository.
     
 -   To clone the repository using the command line using HTTPS, under "Quick setup," click
 -   Open Git Bash.
@@ -77,6 +77,8 @@ crontab -e
 
 ## Database Modeling
 ![Database diagram](./assets/sqlDataModel.jpg)
+
+
 The Postgres database (host_agent) contains two tables that are used to store the monitoring data:
 
 ### host_info

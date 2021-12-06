@@ -65,7 +65,7 @@ crontab -e
 
 # Implementation
 ## Architecture
-![Test Image 4]([https://github.com/jarviscanada/jarvis_data_eng_AshwinRishi/blob/develop/linux_sql/assets/Architecture.jpg])
+![Architecture diagram](./assets/Architecture.jpg)
 
 ## Scripts
 
@@ -76,7 +76,7 @@ crontab -e
 5. queries.sql -This SQL script handles three queries in the Monitoring Agent Program. The first query displays CPU's memory and usage. It helps us to visualize the information of hardware resources in the Node. The second query shows the average memory used over 5-minutes intervals.
 
 ## Database Modeling
-![Test Image 1]([https://github.com/jarviscanada/jarvis_data_eng_AshwinRishi/blob/develop/linux_sql/assets/sqlDataModel.jpg])
+![Database diagram](./assets/sqlDataModel.jpg)
 The Postgres database (host_agent) contains two tables that are used to store the monitoring data:
 
 ### host_info

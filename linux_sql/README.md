@@ -56,7 +56,7 @@ bash scripts/host_info.sh "localhost" 5432 "host_agent" "postgres" "mypassword"
 ```
 bash scripts/host_usage.sh localhost 5432 host_agent postgres password
 ```
-8.  The below CRON program helps to execute the host_usage script for every minute:
+7.  The below CRON program helps to execute the host_usage script for every minute:
 ```
 crontab -e
 # add following line to the file

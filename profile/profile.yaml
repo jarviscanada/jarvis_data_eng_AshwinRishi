@@ -1,50 +1,46 @@
-# Preferred name (Characters only)
+
 name: "Ashwin Rishi"
-# Your GitHub repo root URL
-github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_demo
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_AshwinRishi
+summary: Full stack developer possessing demonstrated acumen in designing, developing, and maintaining web, desktop, and mobile applications. Passionate to learn new skills and to seek to leverage broad-development experience in a challenging role. One of the most amusing factors about coding is that we are leaving a legacy to be followed in every bit of file, and it inspires and excites me so much that each code we write is making someone's life easier.
 
-# Introduce yourself, your academic and professional background.
-# What excites you about the software industry and your passion. At least 80 words
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit.
-
-# Group your skills by level.
-# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
 skills:
-  # At least 5 skills
+
   proficient:
     - Java
-    - Linux/Bash
+    - SpringBoot/Jax-rs
+    - NodeJs
+    - React Js, BootStrap
     - RDBMS/SQL
+    - Junits/Mockito
     - Agile/Scrum
     - Git
-  # At least 5 skills
-  competent:
-    - Donec
-    - fermentum
-    - Donec
-    - fermentum
-    - Donec
-  # At least 5 skills
-  familiar:
-    - Donec
-    - fermentum
-    - fermentum
-    - fermentum
-    - fermentum
 
-# List of Jarvis projects
+  competent:
+    - Angular
+    - HTML/css
+    - GraphIql
+    - Jenkins
+    - Crucible
+    - Junits
+
+  familiar:
+    - MongoDb
+    - Neo4j
+    - Python
+    - R
+    - Android Development
+
 jarvis_projects:
-  - name: "Cluster Monitor"
+  - name: "Linux Cluster Monitor."
     git_url: "/linux_sql"
-    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
-    # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+    #This Project is an Agent which monitors and collects both hardware specification data and resource usage data of each Node in the server.
+    description: Implemented a Monitoring Agent Program to help the LCA (The Jarvis Linux Cluster Administration). The LCA team has a specific set of bash scripts/files being run on the server. Our program helps to reveal the hardware information and resource usage to these servers. Additionally, with the help of the crontab command, the bash runs for every minute and inserts the data in PostgreSQL. Below is the set of sub-sections to glance more at the Project.
   - name: "Core Java Apps"
     git_url: "/core_java"
     description:
-      - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      - "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      - "Twitter App: Yet to implement."
+      - "JDBC App: Yet to implement."
+      - "Grep App: Yet to implement."
   - name: "Springboot App"
     git_url: "/springboot"
     description: ""
@@ -61,63 +57,49 @@ jarvis_projects:
     git_url: "/cloud_devops"
     description: ""
 
-# List of personal or academic projects
-# Feel free to add more projects
 highlighted_projects:
-    #project name
-  - name: "Web app for resturant"
-    #URL is optional
-    git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
-    # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
-  - name: "Machine Learning"
-    git_url:
-    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+  - name: "Hospital Management System."
+    git_url: "https://github.com/ashwinrishipj/HMS"
+    description: Developed an appointment tracker that can chat and mail with the individual doctors. We can view and schedule appointments along with edit, deleting, inserting, and updating To-do List and notes. Built a secured login authentication with the blockchain along with JWT to improve the security by over 50%. Implemented a Covid-tracker with news updates along with the calendar of events for each specific event.
+  - name: "News Display & To-do List:"
+    git_url: "https://github.com/ashwinrishipj/netlify-todo"
+    description: have used JavaScript to build a To-do List that stores completed and pending task lists. Implemented the background using particle-js and Bootstrap to align the view for Mobile and web layout. Stores the data in local storage and retrieves the data each time an update is made on to the list & news data with animation with logout in HTML file.
 
-#List of professional experience
-#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
-#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
 professional_experience:
-  #Write your Jarvis role as a professional experience rather than training.
-  - title: "Software Developer"
+  - title: "Software Developer."
     company: "Jarvis"
-    duration: "2020-present"
-    # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
-  - title: "Tutor"
-    company: "XYZ Company"
-    duration: "2019"
-    description: "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis."
+    duration: "2021 - present"
+    description: "Have been working on multiple products and sprint backlogs. Developed and tested, and deployed Linux, Java, and DevOps projects. Have used docker to implement projects."
+  - title: "Software Developer."
+    company: "Cerner Corporation."
+    duration: "2018 - 2019"
+    description: "Refined and improved the existing code for the Scheduling of user appointments in the revenue cycle team Iteration with continuous Integration of GIT and with AGILE working development ensuring that the coding standards being followed.Developed an Appointment Scheduler Application as part of Industrial training using the JAX-RS(REST -API) with React JS and provided to the user with concurrent handles of 400 users. Have drafted Unit testing related to the APIs from JAX-RS with more than 90% test coverage and authored in peer code reviews for the features and bugs tagged in JIRA. Wrote highly maintainable, solid code for the software system, forming a core framework and earning consistent praise from subsequent developers since initial version."
 
-#List of edcuation
-education: 
-  - school_name: "XYZ university"
-    duration: "2012-2016"
-    degree: "Bachelor of Applied Sciences"
-    department: "Electrical and Computer Engineering"
-    # optional
-    awards_achievements: 
-      - "Scholarship"
-      - "Dean's List (2015, 2016): Ut enim ad minim veniam"
-      - "GPA: 3.8/4.0"
-  - school_name: "XYZ university"
-    duration: "2016-2018"
-    degree: "Master of Engineering"
-    department: "Electrical and Computer Engineering"
-    awards_achievements: 
+education:
+  - school_name: "Cambrian College"
+    duration: "2020-2021"
+    degree: "Post Graduate Diploma"
+    department: "Mobile Application"
+    awards_achievements:
+      - "Developed an application for college Online Application."
+      - "President's List (2020, 2021)"
+      - "GPA: 4.0/4.0"
+  - school_name: "VIT university"
+    duration: "2017-2019"
+    degree: "Master of Engineering."
+    department: "Computer Science and Engineering."
+    awards_achievements:
+      - "Have won prizes in symposiums and college cultural fests."
+      - "8.53/10 GPA"
 
-#Optional section
 others:
-    #category
   - title: "Certificates"
-    #list of items
     bullets:
-      - "Udacity Machine Learning (2019)"
+      - "LinkedIn Certificate(ReactJs)"
   - title: "Awards"
     bullets:
-      - "Winner"
+      - "Second prize in robotics competition"
   - title: "Activities/Hobbies"
     bullets:
-      - "Basketball player"
-      - "Competitive gaming"
-      - "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+      - "Reading Poems and novels"
+      - "playing Archery and Cricket"

@@ -2,47 +2,50 @@
   "education": [
     {
       "awards_achievements": [
-        "Scholarship",
-        "Dean's List (2015, 2016): Ut enim ad minim veniam",
-        "GPA: 3.8/4.0"
+        "Developed an application for college Online Application.",
+        "President's List (2020, 2021)",
+        "GPA: 4.0/4.0"
       ],
-      "degree": "Bachelor of Applied Sciences",
-      "department": "Electrical and Computer Engineering",
-      "duration": "2012-2016",
-      "school_name": "XYZ university"
+      "degree": "Post Graduate Diploma",
+      "department": "Mobile Application",
+      "duration": "2020-2021",
+      "school_name": "Cambrian College"
     },
     {
-      "awards_achievements": null,
-      "degree": "Master of Engineering",
-      "department": "Electrical and Computer Engineering",
-      "duration": "2016-2018",
-      "school_name": "XYZ university"
+      "awards_achievements": [
+        "Have won prizes in symposiums and college cultural fests.",
+        "8.53/10 GPA"
+      ],
+      "degree": "Master of Engineering.",
+      "department": "Computer Science and Engineering.",
+      "duration": "2017-2019",
+      "school_name": "VIT university"
     }
   ],
-  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_demo",
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_AshwinRishi",
   "highlighted_projects": [
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
-      "git_url": "https://github.com/jarviscanada/jarvis_profile_builder",
-      "name": "Web app for resturant"
+      "description": "Developed an appointment tracker that can chat and mail with the individual doctors. We can view and schedule appointments along with edit, deleting, inserting, and updating To-do List and notes. Built a secured login authentication with the blockchain along with JWT to improve the security by over 50%. Implemented a Covid-tracker with news updates along with the calendar of events for each specific event.",
+      "git_url": "https://github.com/ashwinrishipj/HMS",
+      "name": "Hospital Management System."
     },
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
-      "git_url": null,
-      "name": "Machine Learning"
+      "description": "have used JavaScript to build a To-do List that stores completed and pending task lists. Implemented the background using particle-js and Bootstrap to align the view for Mobile and web layout. Stores the data in local storage and retrieves the data each time an update is made on to the list \u0026 news data with animation with logout in HTML file.",
+      "git_url": "https://github.com/ashwinrishipj/netlify-todo",
+      "name": "News Display \u0026 To-do List:"
     }
   ],
   "jarvis_projects": [
     {
-      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "description": "Implemented a Monitoring Agent Program to help the LCA (The Jarvis Linux Cluster Administration). The LCA team has a specific set of bash scripts/files being run on the server. Our program helps to reveal the hardware information and resource usage to these servers. Additionally, with the help of the crontab command, the bash runs for every minute and inserts the data in PostgreSQL. Below is the set of sub-sections to glance more at the Project.",
       "git_url": "/linux_sql",
-      "name": "Cluster Monitor"
+      "name": "Linux Cluster Monitor."
     },
     {
       "description": [
-        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+        "Twitter App: Yet to implement.",
+        "JDBC App: Yet to implement.",
+        "Grep App: Yet to implement."
       ],
       "git_url": "/core_java",
       "name": "Core Java Apps"
@@ -77,21 +80,20 @@
   "others": [
     {
       "bullets": [
-        "Udacity Machine Learning (2019)"
+        "LinkedIn Certificate(ReactJs)"
       ],
       "title": "Certificates"
     },
     {
       "bullets": [
-        "Winner"
+        "Second prize in robotics competition"
       ],
       "title": "Awards"
     },
     {
       "bullets": [
-        "Basketball player",
-        "Competitive gaming",
-        "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+        "Reading Poems and novels",
+        "playing Archery and Cricket"
       ],
       "title": "Activities/Hobbies"
     }
@@ -99,39 +101,43 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
-      "duration": "2020-present",
-      "title": "Software Developer"
+      "description": "Have been working on multiple products and sprint backlogs. Developed and tested, and deployed Linux, Java, and DevOps projects. Have used docker to implement projects.",
+      "duration": "2021 - present",
+      "title": "Software Developer."
     },
     {
-      "company": "XYZ Company",
-      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
-      "duration": "2019",
-      "title": "Tutor"
+      "company": "Cerner Corporation.",
+      "description": "Refined and improved the existing code for the Scheduling of user appointments in the revenue cycle team Iteration with continuous Integration of GIT and with AGILE working development ensuring that the coding standards being followed.Developed an Appointment Scheduler Application as part of Industrial training using the JAX-RS(REST -API) with React JS and provided to the user with concurrent handles of 400 users. Have drafted Unit testing related to the APIs from JAX-RS with more than 90% test coverage and authored in peer code reviews for the features and bugs tagged in JIRA. Wrote highly maintainable, solid code for the software system, forming a core framework and earning consistent praise from subsequent developers since initial version.",
+      "duration": "2018 - 2019",
+      "title": "Software Developer."
     }
   ],
   "skills": {
     "competent": [
-      "Donec",
-      "fermentum",
-      "Donec",
-      "fermentum",
-      "Donec"
+      "Angular",
+      "HTML/css",
+      "GraphIql",
+      "Jenkins",
+      "Crucible",
+      "Junits"
     ],
     "familiar": [
-      "Donec",
-      "fermentum",
-      "fermentum",
-      "fermentum",
-      "fermentum"
+      "MongoDb",
+      "Neo4j",
+      "Python",
+      "R",
+      "Android Development"
     ],
     "proficient": [
       "Java",
-      "Linux/Bash",
+      "SpringBoot/Jax-rs",
+      "NodeJs",
+      "React Js, BootStrap",
       "RDBMS/SQL",
+      "Junits/Mockito",
       "Agile/Scrum",
       "Git"
     ]
   },
-  "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit."
+  "summary": "Full stack developer possessing demonstrated acumen in designing, developing, and maintaining web, desktop, and mobile applications. Passionate to learn new skills and to seek to leverage broad-development experience in a challenging role. One of the most amusing factors about coding is that we are leaving a legacy to be followed in every bit of file, and it inspires and excites me so much that each code we write is making someone's life easier."
 }

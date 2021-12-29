@@ -1,6 +1,7 @@
 package ca.jrvs.apps.grep;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
@@ -43,9 +44,10 @@ public interface JavaGrep {
 	 * @param inputFile on which the read line operation will be performed.
 	 * @return {@link List<String>} from the input file after performing the read
 	 *         operation.
-	 * @throws IllegalArgumentException if the given input file is not a file Type.
+	 * @throws FileNotFoundException if the given input file is not a file Type or
+	 *                               not found.
 	 */
-	List<String> readLines(File inputFile) throws IllegalArgumentException;
+	List<String> readLines(File inputFile) throws FileNotFoundException;
 
 	/**
 	 * Verifies the regex pattern to the user given line.

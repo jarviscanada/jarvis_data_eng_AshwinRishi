@@ -11,20 +11,22 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Implements the interface {@link JavaGrep}
+ * Implementation for the class {@linkplain JavaGrepLamda}
+ * 
  * <p>
  * copyright & copy; 2021 Jarvis.
  * </p>
  * 
  * @author Ashwin Rishi.
+ *
  */
-public class JavaGrepImp implements JavaGrep {
-
+public class JavaGrepLambdaImp extends JavaGrepImp {
 	public Scanner scanner;
 
 	private String regex;
@@ -63,7 +65,7 @@ public class JavaGrepImp implements JavaGrep {
 			filesList = Files.list(Paths.get(directory)).filter(Files::isRegularFile).map(Path::toFile)
 					.collect(Collectors.toList());
 		} catch (Exception e) {
-			JavaGrepImp.logger.error("Reading files error:" + e);
+			JavaGrepLambdaImp.logger.error("Reading files error:" + e);
 		}
 
 		return filesList;
@@ -72,16 +74,12 @@ public class JavaGrepImp implements JavaGrep {
 	@Override
 	public List<String> readLines(File inputFile) throws FileNotFoundException {
 		lines = new ArrayList<String>();
+
 		try {
-			scanner = new Scanner(inputFile);
-			while (scanner.hasNextLine()) {
-				String line = scanner.nextLine();
-				lines.add(line);
-			}
-			scanner.close();
-		} catch (FileNotFoundException e) {
-			JavaGrepImp.logger.error("Reading files error:" + e);
-			throw new FileNotFoundException("file not found" + e);
+			Files.lines(new File(inputFile.toString()).toPath()).map(line -> line.trim())
+					.filter(line -> !line.isEmpty()).forEach(line -> lines.add(line));
+		} catch (Exception e) {
+			throw new FileNotFoundException("read file error");
 		}
 
 		return lines;
@@ -106,7 +104,7 @@ public class JavaGrepImp implements JavaGrep {
 		try {
 			for (String string : lines) {
 				writer.write(string + System.lineSeparator());
-				JavaGrepImp.logger.info("inserted a line " + string + " at " + getOutFile());
+				JavaGrepLambdaImp.logger.info("inserted a line " + string + " at " + getOutFile());
 			}
 		} catch (Exception e) {
 			throw new IOException("could not write to a file" + e);
@@ -144,7 +142,7 @@ public class JavaGrepImp implements JavaGrep {
 			throw new IllegalArgumentException("need 3 parameters to perform the operation:");
 		}
 
-		JavaGrep javagrep = new JavaGrepImp();
+		JavaGrepLambdaImp javagrep = new JavaGrepLambdaImp();
 		javagrep.setRegex(args[0]);
 		javagrep.setRootPath(args[1]);
 		javagrep.setOutFile(args[2]);
@@ -152,7 +150,7 @@ public class JavaGrepImp implements JavaGrep {
 		try {
 			javagrep.process();
 		} catch (Exception e) {
-			JavaGrepImp.logger.error("could not process:" + e);
+			JavaGrepLambdaImp.logger.error("could not process:" + e);
 		}
 	}
 }

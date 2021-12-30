@@ -7,9 +7,9 @@ db_name=$3
 psql_user=$4
 psql_password=$5
 
-#check if the number of arguments are valid
+#check if the number of arguments is valid
 if [ $# -ne 5 ]; then
-    echo "Invalid number of arguments"
+    echo "Invalid number of arguments."
     exit 1
 fi
 

@@ -73,7 +73,12 @@ professional_experience:
   - title: "Software Developer."
     company: "Cerner Corporation."
     duration: "2018 - 2019"
-    description: "Refined and improved the existing code for the Scheduling of user appointments in the revenue cycle team Iteration with continuous Integration of GIT and with AGILE working development ensuring that the coding standards being followed.Developed an Appointment Scheduler Application as part of Industrial training using the JAX-RS(REST -API) with React JS and provided to the user with concurrent handles of 400 users. Have drafted Unit testing related to the APIs from JAX-RS with more than 90% test coverage and authored in peer code reviews for the features and bugs tagged in JIRA. Wrote highly maintainable, solid code for the software system, forming a core framework and earning consistent praise from subsequent developers since initial version."
+    description: "Refined and improved the existing code for the Scheduling of user appointments in the revenue cycle team Iteration with continuous Integration of GIT and with AGILE working development ensuring that the coding standards being followed. Developed an Appointment Scheduler Application as part of Industrial training using the JAX-RS(REST -API) with React JS and provided to the user with concurrent handles of 400 users. Have drafted Unit testing related to the APIs from JAX-RS with more than 90% test coverage and authored in peer code reviews for the features and bugs tagged in JIRA. Wrote highly maintainable, solid code for the software system, forming a core framework and earning consistent praise from subsequent developers since initial version."
+  - title: "Software Engineering Immersive(Trainee)."
+    company: "GUVI Geek Networks, IITM Research Park, India"
+    duration: "2019 - 2020"
+    description: "Have graduated along with the other Trainees from various firms during this Bootcamp Training. Had great exposure to one of the world renowned developers teaching us the architecture scaling and Internal event loops in JavaScript and also code coverages of Junits. Been in Zen Class to Code continuously to achieve coding tasks and completions that's due on every week. Almost 13 to 15 hrs of coding everyday. Have developed full stack applications on HTML , CSS , Bootstrap , JavaScript, ReactJs , Node.js , Git and deployed multiple applications into AWS cloud.Lectured on topics of Event Loop and call-backs and hoisting in JavaScript to the ZenClass students. Developed, coded, modified and debugged application programs of varying degree of complexity with full independence."
+
 
 education:
   - school_name: "Cambrian College"

@@ -9,7 +9,7 @@ psql_password=$5
 
 #check if the number of arguments is valid
 if [ $# -ne 5 ]; then
-    echo "Not enough 5 parameters"
+    echo "Invalid number of arguments."
     exit 1
 fi
 
@@ -29,3 +29,5 @@ timestamp="$(date '+%Y-%m-%d %H:%M:%S')"
 #inserts the hardware specification to the host_info table
 insert_statement="insert into host_info (hostname,cpu_number,cpu_architecture,cpu_model,cpu_mhz,l2_cache,total_mem,timestamp)values('$hostname',$cpu_number,'$cpu_architecture','$cpu_model','$cpu_mhz','$l2_cache',$total_mem,'$timestamp')"
 psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$insert_statement"
+
+exit $?

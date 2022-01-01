@@ -6,6 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +17,7 @@ import org.junit.Test;
  * <p>
  * copyright & copy; 2021 Jarvis.
  * </p>
- * 
+ *
  * @author Ashwin Rishi
  *
  */
@@ -24,16 +25,14 @@ public class JavaGrepImpTest {
 
 	private JavaGrep javaGrep = new JavaGrepImp();
 	private String regex = "alpha";
-	private String outFile = "D:\\testOut\\rishi";
-	private String rootPath = "D:\\test\\";
+	private String outFile = "./out/grep";
+	private String rootPath = "./data/txt/";
 	private List<File> expectedFiles, actualfiles;
 	private List<String> resultLines;
-	private File file = new File("D:\\test\\ashwin.txt");
+	private File file = new File("./data/txt/shakespeare.txt");
 	private List<String> lines = new ArrayList<String>() {
 		{
-			add("alpha");
-			add("alpha");
-			add("alpha");
+			add("Shakespeare");
 		}
 	};
 	private String[] args;
@@ -82,24 +81,20 @@ public class JavaGrepImpTest {
 
 	@Test
 	public void testReadLines() throws FileNotFoundException {
-		File fileTest = new File("D:\\test\\ashwin.png");
-		resultLines = new ArrayList<String>();
-
+		File fileTest = new File("./data/txt/shakespeare.png");
 		assertThrows(FileNotFoundException.class, () -> javaGrep.readLines(fileTest));
 
-		resultLines = javaGrep.readLines(file);
-		assertEquals(lines, resultLines);
+		int resultLines = javaGrep.readLines(file).size();
+		assertEquals(new BigDecimal(124456), new BigDecimal(resultLines));
 	}
 
 	@Test
 	public void testWriteToFiles() throws IOException {
-
-		resultLines = new ArrayList<String>();
 		javaGrep.setOutFile(outFile);
 
 		javaGrep.writeToFile(lines);
-		resultLines = javaGrep.readLines(file);
-		assertEquals(lines, resultLines);
+		int resultLines = javaGrep.readLines(file).size();
+		assertEquals(new BigDecimal(124456), new BigDecimal(resultLines));
 	}
 
 	@Test
@@ -113,10 +108,10 @@ public class JavaGrepImpTest {
 		args = new String[] { "test", "test2" };
 
 		assertThrows(IllegalArgumentException.class, () -> JavaGrepImp.main(args));
-		args = new String[] { "alpha", "D:\\in\\", "D:\\out\\ashwin" };
+		args = new String[] { "Shakespeare", "./data/txt/", "./out/grep.txt" };
 		JavaGrepImp.main(args);
 
-		File outFile = new File("D:\\testOut\\rishi");
+		File outFile = new File("./out/grep.txt");
 		resultLines = javaGrep.readLines(outFile);
 		assertEquals(lines, resultLines);
 	}

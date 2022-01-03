@@ -29,3 +29,20 @@ local.properties
 
 # Locally stored "Eclipse launch configurations"
 *.launch
+
+target
+*/target
+dependency-reduced-pom.xml
+
+*.log
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# GCE JSON Keys
+/*.json
+
+*.DS_Store
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*

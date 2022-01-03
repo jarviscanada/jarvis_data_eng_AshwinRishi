@@ -87,7 +87,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
 
 	@Override
 	public boolean containsPattern(String line) {
-		return line.matches(getRegex());
+		return line.contains(getRegex());
 	}
 
 	public String validateNotNullOrEmpty(String argument) {

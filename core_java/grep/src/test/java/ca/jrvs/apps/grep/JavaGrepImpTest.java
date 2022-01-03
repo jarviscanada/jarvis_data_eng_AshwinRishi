@@ -25,7 +25,7 @@ public class JavaGrepImpTest {
 
 	private JavaGrep javaGrep = new JavaGrepImp();
 	private String regex = "alpha";
-	private String outFile = "./out/grep";
+	private String outFile = "./out/grep.txt";
 	private String rootPath = "./data/txt/";
 	private List<File> expectedFiles, actualfiles;
 	private List<String> resultLines;
@@ -113,6 +113,6 @@ public class JavaGrepImpTest {
 
 		File outFile = new File("./out/grep.txt");
 		resultLines = javaGrep.readLines(outFile);
-		assertEquals(lines, resultLines);
+		assertEquals(45, resultLines.size());
 	}
 }

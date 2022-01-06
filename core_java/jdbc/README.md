@@ -10,6 +10,8 @@ This section explains the er diagram and its design patterns to perform the CRUD
 ## ER Diagram
 
 The ER diagram depicts the relationship between the tables used:
+
+
 ![ER Diagram](assets/ERD.jpg)
 
 ## Design Patterns

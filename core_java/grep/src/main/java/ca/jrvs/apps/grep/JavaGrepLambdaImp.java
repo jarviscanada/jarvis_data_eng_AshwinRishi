@@ -17,7 +17,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Implementation for the class {@link JavaGrepLamda}
+ * Extends from the class {@link JavaGrepImp}
  * 
  * <p>
  * copyright & copy; 2021 Jarvis.
@@ -63,7 +63,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
 			throw new IllegalArgumentException("need 3 parameters to perform the operation:");
 		}
 
-		JavaGrepLambdaImp javagrep = new JavaGrepLambdaImp();
+		JavaGrepImp javagrep = new JavaGrepLambdaImp();
 		javagrep.setRegex(args[0]);
 		javagrep.setRootPath(args[1]);
 		javagrep.setOutFile(args[2]);

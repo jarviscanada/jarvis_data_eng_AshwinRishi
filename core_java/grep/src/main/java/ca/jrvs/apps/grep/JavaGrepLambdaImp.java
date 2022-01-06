@@ -17,47 +17,20 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Implementation for the class {@linkplain JavaGrepLamda}
+ * Implementation for the class {@link JavaGrepLamda}
  * 
  * <p>
  * copyright & copy; 2021 Jarvis.
  * </p>
  * 
  * @author Ashwin Rishi.
- *
  */
 public class JavaGrepLambdaImp extends JavaGrepImp {
 	public Scanner scanner;
 
-	private String regex;
-	private String outFile;
-	private String rootPath;
-
 	private List<String> lines;
 	private List<File> filesList;
-	private List<String> matchedLines;
 	private final static Logger logger = LoggerFactory.getLogger(JavaGrep.class);
-
-	@Override
-	public void process() throws IOException {
-		matchedLines = new ArrayList<String>();
-
-		listFiles(getRootPath());
-		try {
-			for (File file : filesList) {
-				readLines(file);
-				for (String line : lines) {
-					if (containsPattern(line)) {
-						matchedLines.add(line);
-					}
-				}
-			}
-		} catch (Exception e) {
-			throw new IOException("Error in reading files" + e);
-		}
-
-		writeToFile(matchedLines);
-	}
 
 	@Override
 	public List<File> listFiles(String directory) {
@@ -83,58 +56,6 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
 		}
 
 		return lines;
-	}
-
-	@Override
-	public boolean containsPattern(String line) {
-		return line.contains(getRegex());
-	}
-
-	public String validateNotNullOrEmpty(String argument) {
-		if (argument == null || argument.length() <= 0) {
-			throw new IllegalArgumentException(argument + "cannot be null or empty");
-		}
-
-		return argument;
-	}
-
-	@Override
-	public void writeToFile(List<String> lines) throws IOException {
-		FileWriter writer = new FileWriter(getOutFile());
-		try {
-			for (String string : lines) {
-				writer.write(string + System.lineSeparator());
-				JavaGrepLambdaImp.logger.info("inserted a line " + string + " at " + getOutFile());
-			}
-		} catch (Exception e) {
-			throw new IOException("could not write to a file" + e);
-		}
-
-		writer.close();
-	}
-
-	public void setRegex(String regex) {
-		this.regex = validateNotNullOrEmpty(regex);
-	}
-
-	public String getOutFile() {
-		return outFile;
-	}
-
-	public void setOutFile(String outFile) {
-		this.outFile = validateNotNullOrEmpty(outFile);
-	}
-
-	public String getRootPath() {
-		return rootPath;
-	}
-
-	public void setRootPath(String rootPath) {
-		this.rootPath = validateNotNullOrEmpty(rootPath);
-	}
-
-	public String getRegex() {
-		return regex;
 	}
 
 	public static void main(String[] args) {

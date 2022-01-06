@@ -8,11 +8,11 @@ import java.util.List;
 /**
  * Interface that handles the following file operations:
  * <ul>
- * <li>ListFiles: To display the files available in the given directory</li>
- * <li>ReadLines: To read and display the lines in a given file</li>
+ * <li>ListFiles: To access the files available in the given directory</li>
+ * <li>ReadLines: To read and the lines in a specific file</li>
  * <li>PatterSearch: To search a particular regex pattern for the given
  * string</li>
- * <li>WriteToFile: To write the given string to a particular file</li>
+ * <li>WriteToFile: To write the string on a particular file</li>
  * </ul>
  * 
  * <p>
@@ -23,14 +23,14 @@ import java.util.List;
  */
 public interface JavaGrep {
 	/**
-	 * Performs a top level search of workflow.
+	 * Performs a top-level search of workflow.
 	 * 
 	 * @throws IOException if there is an invalid search or fail in search.
 	 */
 	void process() throws IOException;
 
 	/**
-	 * Fetches list of files available for the given directory.
+	 * Fetches the list of files available for the given directory.
 	 * 
 	 * @param rootDirectory on which the filesSearch to be performed.
 	 * @return {@link List<File>} present in the given directories.
@@ -52,21 +52,21 @@ public interface JavaGrep {
 	/**
 	 * Verifies the regex pattern to the user given line.
 	 * 
-	 * @param line on which the regex operation to be performed.
-	 * @return true if given line matches with the regex;false otherwise.
+	 * @param line on which the regex operation will be performed.
+	 * @return true if the given line matches the regex; false otherwise.
 	 */
 	boolean containsPattern(String line);
 
 	/**
 	 * Writes into a new file from the user given data.
 	 * 
-	 * @param lines to be inserted to the new file.
+	 * @param lines to insert into the new file.
 	 * @throws IOException if the insertion to the new file fails.
 	 */
 	void writeToFile(List<String> lines) throws IOException;
 
 	/**
-	 * Initializes the rootPath from the parameter.
+	 * Initializes the root path from the parameter.
 	 * 
 	 * @param rootPath and this cannot be {@code null} or empty.
 	 * @throws IllegalArgumentException if the argument is {@code null} or empty.
@@ -105,5 +105,4 @@ public interface JavaGrep {
 	 * @return files of type String. This value will never be {@code null} or empty.
 	 */
 	String getOutFile();
-
 }

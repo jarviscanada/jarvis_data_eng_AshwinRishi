@@ -1,6 +1,6 @@
 # Ashwin Rishi . Jarvis Consulting
 
-Full stack developer possessing demonstrated acumen in designing, developing, and maintaining web, desktop, and mobile applications. Passionate to learn new skills and to seek to leverage broad-development experience in a challenging role. One of the most amusing factors about coding is that we are leaving a legacy to be followed in every bit of file, and it inspires and excites me so much that each code we write is making someone's life easier.
+Full stack developer possessing demonstrated acumen in designing, developing, and maintaining web, desktop, and mobile applications. Passionate to learn new skills and seeking to leverage broad-development experience in a challenging role.
 
 ## Skills
 

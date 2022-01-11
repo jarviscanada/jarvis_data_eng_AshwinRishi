@@ -1,6 +1,6 @@
 # Ashwin Rishi . Jarvis Consulting
 
-Full stack developer possessing demonstrated acumen in designing, developing, and maintaining web, desktop, and mobile applications. Passionate to learn new skills and seeking to leverage broad-development experience in a challenging role.
+Full stack developer possessing demonstrated acumen in designing, developing, and maintaining web, desktop, and mobile applications. Passionate to learn new skills and seeking to leverage broad-development experience in a challenging role.One of the most amusing factors about coding is that we are leaving a legacy to be followed in every bit of file, and it inspires and excites me so much that each code we write is making someone's life easier.
 
 ## Skills
 
@@ -16,6 +16,11 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_AshwinRish
 
 
 **Linux Cluster Monitor.** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_AshwinRishi/tree/master/linux_sql)]: Implemented a Monitoring Agent Program to help the LCA (The Jarvis Linux Cluster Administration). The LCA team has a specific set of bash scripts/files being run on the server. Our program helps to reveal the hardware information and resource usage to these servers. Additionally, with the help of the crontab command, the bash runs for every minute and inserts the data in PostgreSQL. Below is the set of sub-sections to glance more at the Project.
+
+**Core Java.** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_AshwinRishi/tree/master/core_java)]:
+      
+  - Grep: Have developed a Grep application that searches a file for a specified string and writes the matching line to another file.
+  - JDBC: Created a CRUD (create, read, update, and delete) application that communicates with PostgreSql using the JDBC API.Transferring objects across classes and modules has also been done using the DAO and DTO design patterns.
 
 
 ## Highlighted Projects

@@ -37,13 +37,13 @@
   ],
   "jarvis_projects": [
     {
-      "description": "Implemented a Monitoring Agent Program to help the LCA (The Jarvis Linux Cluster Administration). The LCA team has a specific set of bash scripts/files being run on the server. Our program helps to reveal the hardware information and resource usage to these servers. Additionally, with the help of the crontab command, the bash runs for every minute and inserts the data in PostgreSQL. Below is the set of sub-sections to glance more at the Project.",
+      "description": "Implemented a Monitoring Agent Program to help the LCA (The Jarvis Linux Cluster Administration). The LCA team has a specific set of bash scripts/files being run on the server. Our program helps to reveal the hardware information and resource usage to these servers. Additionally, with the help of the crontab command, the bash runs for every minute and inserts the data in PostgreSQL.",
       "git_url": "/linux_sql",
       "name": "Linux Cluster Monitor."
     },
     {
       "description": [
-        "Grep: Have developed a Grep application that searches a file for a specified string and writes the matching line to another file.",
+        "Grep: Have developed a Grep application that searches a file for a specified string and writes the matching line to another file.In where the String to search,input \u0026 output file location are passed through console. Moreover, Junits has been used to test the application.",
         "JDBC: Created a CRUD (create, read, update, and delete) application that communicates with PostgreSql using the JDBC API.Transferring objects across classes and modules has also been done using the DAO and DTO design patterns."
       ],
       "git_url": "/core_java",
@@ -119,5 +119,5 @@
       "Git"
     ]
   },
-  "summary": "Full stack developer possessing demonstrated acumen in designing, developing, and maintaining web, desktop, and mobile applications. Passionate to learn new skills and seeking to leverage broad-development experience in a challenging role.One of the most amusing factors about coding is that we are leaving a legacy to be followed in every bit of file, and it inspires and excites me so much that each code we write is making someone's life easier."
+  "summary": "Full stack developer possessing demonstrated acumen in designing, developing, and maintaining web, desktop, and mobile applications. Passionate to learn new skills and seeking to leverage broad-development experience in a challenging role. One of the most amusing factors about coding is that we are leaving a legacy to be followed in every bit of file, and it inspires and excites me so much that each code we write is making someone's life easier."
 }

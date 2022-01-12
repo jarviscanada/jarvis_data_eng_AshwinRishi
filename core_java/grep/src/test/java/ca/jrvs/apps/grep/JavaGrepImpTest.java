@@ -45,7 +45,6 @@ public class JavaGrepImpTest {
 
 	@Test
 	public void testSetters() {
-
 		javaGrep.setRegex(regex);
 		javaGrep.setOutFile(outFile);
 		javaGrep.setRootPath(rootPath);
@@ -63,14 +62,15 @@ public class JavaGrepImpTest {
 	}
 
 	@Test
-	public void testListFiles() {
-
+	public void testListFiles() throws FileNotFoundException {
 		expectedFiles = new ArrayList<File>();
 		expectedFiles.add(file);
 		javaGrep.setRootPath(rootPath);
 
 		actualfiles = javaGrep.listFiles(rootPath);
 		assertEquals(expectedFiles, actualfiles);
+
+		assertThrows(FileNotFoundException.class, () -> javaGrep.listFiles(null));
 	}
 
 	@Test

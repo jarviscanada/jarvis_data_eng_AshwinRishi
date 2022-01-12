@@ -34,8 +34,9 @@ public interface JavaGrep {
 	 * 
 	 * @param rootDirectory on which the filesSearch to be performed.
 	 * @return {@link List<File>} present in the given directories.
+	 * @throws FileNotFoundException if the application could not locate files.
 	 */
-	List<File> listFiles(String directory);
+	List<File> listFiles(String directory) throws FileNotFoundException;
 
 	/**
 	 * Reads lines for the given input file and displays all the lines from the

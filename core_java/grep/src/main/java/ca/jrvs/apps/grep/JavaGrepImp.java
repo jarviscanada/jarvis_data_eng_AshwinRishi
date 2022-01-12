@@ -56,12 +56,12 @@ public class JavaGrepImp implements JavaGrep {
 	}
 
 	@Override
-	public List<File> listFiles(String directory) {
+	public List<File> listFiles(String directory) throws FileNotFoundException {
 		try {
 			filesList = Files.list(Paths.get(directory)).filter(Files::isRegularFile).map(Path::toFile)
 					.collect(Collectors.toList());
 		} catch (Exception e) {
-			JavaGrepImp.logger.error("Reading files error:" + e);
+			throw new FileNotFoundException("Error in listing files" + e);
 		}
 
 		return filesList;
@@ -78,7 +78,6 @@ public class JavaGrepImp implements JavaGrep {
 			}
 			scanner.close();
 		} catch (FileNotFoundException e) {
-			JavaGrepImp.logger.error("Reading files error:" + e);
 			throw new FileNotFoundException("file not found" + e);
 		}
 

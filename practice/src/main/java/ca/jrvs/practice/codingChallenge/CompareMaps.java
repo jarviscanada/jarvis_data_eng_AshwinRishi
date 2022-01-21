@@ -15,7 +15,7 @@ import java.util.Map;
  * @author Ashwin Rishi.
  */
 public class CompareMaps<K, V> {
-	
+
 	/**
 	 * Big-O: O(1). Justification: it's an arithmetic operation.
 	 * 
@@ -25,16 +25,5 @@ public class CompareMaps<K, V> {
 	 */
 	public boolean validateMaps(Map<K, V> firstMap, Map<K, V> secondMap) {
 		return firstMap.equals(secondMap);
-	}
-	
-	public static void main(String[] args) {
-		HashMap<Integer, String> map1 = new HashMap();
-		HashMap<Integer, String> map2 = new HashMap();
-		
-		map1.put(1, "ashwin");
-		map2.put(1, "ashwin");
-		
-		CompareMaps compareMaps = new CompareMaps();
-		System.out.println(compareMaps.validateMaps(map1, map2));
 	}
 }

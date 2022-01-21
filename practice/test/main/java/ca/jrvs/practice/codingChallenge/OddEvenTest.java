@@ -17,7 +17,7 @@ class OddEvenTest {
 
 	private OddEven oddEven;
 
-	@BeforeEach
+	@Before
 	void setUp() throws Exception {
 		oddEven = new OddEven();
 	}

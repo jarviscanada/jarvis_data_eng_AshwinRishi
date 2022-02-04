@@ -1,4 +1,4 @@
-package ca.jrvs.practice.codingChallenge;
+package java.ca.jrvs.practice.codingChallenge;
 
 /**
  * <p>

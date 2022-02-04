@@ -1,7 +1,10 @@
-package ca.jrvs.practice.codingChallenge;
+package Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.ca.jrvs.practice.codingChallenge.OddEven;
+
+import org.junit.Before;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

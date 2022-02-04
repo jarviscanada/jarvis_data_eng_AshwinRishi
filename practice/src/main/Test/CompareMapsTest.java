@@ -1,11 +1,12 @@
-package ca.jrvs.practice.codingChallenge;
+package Test;
 
-import static org.junit.Assert.*;
-
+import static org.junit.jupiter.api.Assertions.*;
+import java.ca.jrvs.practice.codingChallenge.CompareMaps;
 import java.util.HashMap;
-
 import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
 
 /**
  * Test Class for {@link CompareMaps}
@@ -14,8 +15,11 @@ import org.junit.Test;
  * </p>
  * 
  * @author Ashwin Rishi.
+ * @param <K> 
+ * @param <V>
+ * @param <K>
  */
-public class CompareMapsTest {
+public class CompareMapsTest<V, K> {
 
 	private CompareMaps<K, V> compareMaps;
 	private HashMap<Integer, String> map1 = new HashMap();
@@ -23,7 +27,7 @@ public class CompareMapsTest {
 
 	@Before
 	public void setUp() throws Exception {
-		compareMaps = new CompareMapsTest();
+		compareMaps = new CompareMaps<>();
 		map1.put(1, "ashwin");
 		map2.put(1, "ashwin");
 	}
@@ -34,5 +38,4 @@ public class CompareMapsTest {
 		map2.put(2, "ashwin");
 		assertFalse(compareMaps.validateMaps(map1, map2), false);
 	}
-
 }

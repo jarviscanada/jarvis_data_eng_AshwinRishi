@@ -1,4 +1,4 @@
-package ca.jrvs.regex;
+package java.ca.jrvs.regex;
 
 /**
  * <p>

@@ -1,4 +1,4 @@
-package ca.jrvs.practice.codingChallenge;
+package java.ca.jrvs.practice.codingChallenge;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,7 +23,7 @@ public class CompareMaps<K, V> {
 	 * @param V is of generic data type on which the comparison will be performed.
 	 * @return {@code true} if the K & V 0f two maps are equals;false otherwise.
 	 */
-	public boolean validateMaps(Map<K, V> firstMap, Map<K, V> secondMap) {
-		return firstMap.equals(secondMap);
+	public boolean validateMaps(HashMap<Integer, String> map1, HashMap<Integer, String> map2) {
+		return map1.equals(map2);
 	}
 }

@@ -10,46 +10,6 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import java.io.IOException;
 
 public class JsonParser {
-    /**
-     * Convert a Java object to a JSON String
-     *
-     * @param object input object
-     * @return JSON String
-     * @throws JsonProcessingException JSON exception
-     */
-    public static String toJson(Object object, boolean prettyJson, boolean includeNullValues)
-            throws JsonProcessingException {
-        ObjectMapper objectMapper = new ObjectMapper();
-        if (!includeNullValues) {
-            objectMapper.setSerializationInclusion((JsonInclude.Include.NON_NULL));
-        }
-        if (prettyJson) {
-            objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-        }
-        return objectMapper.writeValueAsString(object);
-    }
-
-    /**
-     * Parse JSON string to an object
-     *
-     * @param json     JSON string
-     * @param mappingclass Map class
-     * @param <T>      Type
-     * @return object Java object
-     * @throws IOException IO Exception
-     */
-    @SuppressWarnings("unchecked")
-    public static <T> T toObjectFromJson(String json, Class<?> mappingclass) throws IOException, JsonProcessingException {
-        ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        return (T) objectMapper.readValue(json, mappingclass);
-    }
-
-    public static void main(String[] args) throws IOException {
-        Company company = toObjectFromJson(companyStr,Company.class);
-        System.out.println(toJson(company,true,false));
-    }
-
     public static final String companyStr = "{\n"
             + "   \"symbol\":\"AAPL\",\n"
             + "   \"companyName\":\"Apple Inc.\",\n"
@@ -94,4 +54,44 @@ public class JsonParser {
             + "      }\n"
             + "   ]\n"
             + "}";
+
+    /**
+     * Convert a Java object to a JSON String
+     *
+     * @param object input object
+     * @return JSON String
+     * @throws JsonProcessingException JSON exception
+     */
+    public static String toJson(Object object, boolean prettyJson, boolean includeNullValues)
+            throws JsonProcessingException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        if (!includeNullValues) {
+            objectMapper.setSerializationInclusion((JsonInclude.Include.NON_NULL));
+        }
+        if (prettyJson) {
+            objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
+        }
+        return objectMapper.writeValueAsString(object);
+    }
+
+    /**
+     * Parse JSON string to an object
+     *
+     * @param json         JSON string
+     * @param mappingclass Map class
+     * @param <T>          Type
+     * @return object Java object
+     * @throws IOException IO Exception
+     */
+    @SuppressWarnings("unchecked")
+    public static <T> T toObjectFromJson(String json, Class<?> mappingclass) throws IOException, JsonProcessingException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        return (T) objectMapper.readValue(json, mappingclass);
+    }
+
+    public static void main(String[] args) throws IOException {
+        Company company = toObjectFromJson(companyStr, Company.class);
+        System.out.println(toJson(company, true, false));
+    }
 }

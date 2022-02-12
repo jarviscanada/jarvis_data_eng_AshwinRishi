@@ -70,5 +70,4 @@ public class Financial {
     public void setNetIncome(BigInteger netIncome) {
         this.netIncome = netIncome;
     }
-
 }

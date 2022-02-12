@@ -1,5 +1,7 @@
 package ca.jrvs.apps.Twitter.controller;
 
+import ca.jrvs.apps.Twitter.model.Tweet;
+
 import java.util.List;
 
 public interface Controller {
@@ -30,5 +32,4 @@ public interface Controller {
      * @throws IllegalArgumentException if args are invalid
      */
     List<Tweet> deleteTweet(String[] args);
-
 }

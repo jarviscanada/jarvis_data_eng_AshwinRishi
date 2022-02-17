@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Ashwin Rishi . Jarvis Consulting
 
 Full stack developer possessing demonstrated acumen in designing, developing, and maintaining web, desktop, and mobile applications. Passionate to learn new skills and seeking to leverage broad-development experience in a challenging role. One of the most amusing factors about coding is that we are leaving a legacy to be followed in every bit of file, and it inspires and excites me so much that each code we write is making someone's life easier.
@@ -55,12 +54,3 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_AshwinRish
 - Second prize in robotics competition
 - Reading Poems and novels
 - playing Archery and Cricket
-=======
-# Jarvis Data Engineering Training - The below listed projects are to be implemented during the course of Training.
-1. [Linux cluster monitoring agent (Linux and SQL)](./linux_sql)
-2. [Core Java Application](./core_java) In-progress
-3. [Springboot REST Full API](./springboot) In-progress
-4. [Hadoop or Hive](./hadoop) In-progress
-5. [Spark or Scala](./spark) In-progress
-6. [Cloud & DevOps Operation](./cloud_devops) In-progress
->>>>>>> release

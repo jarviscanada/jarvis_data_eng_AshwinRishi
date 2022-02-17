@@ -17,8 +17,8 @@ import java.util.List;
         "financials",
         "dividends"
 })
-public class Company {
 
+public class Company {
     @JsonProperty("symbol")
     private String symbol;
     @JsonProperty("companyName")

@@ -1,6 +1,5 @@
 package ca.jrvs.apps.Twitter;
 
-import ca.jrvs.apps.Twitter.dao.TwitterDao;
 import ca.jrvs.apps.Twitter.dao.helper.HttpHelper;
 import ca.jrvs.apps.Twitter.dao.helper.TwitterHttpHelper;
 import com.google.gdata.util.common.base.PercentEscaper;
@@ -30,6 +29,20 @@ public class TwitterApplication {
     private HttpClient httpClient;
     private HttpResponse response;
 
+    public static void main(String[] args) throws IOException, URISyntaxException {
+        TwitterApplication twitterApplication = new TwitterApplication();
+//        twitterApplication.environmentalValues();
+
+        HttpHelper httpHelper = new TwitterHttpHelper(twitterApplication.consumerKey, twitterApplication.consumerSecret, twitterApplication.accessToken, twitterApplication.tokenSecret);
+        HttpResponse httpResponse = httpHelper.httpGet(new URI("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=ashwinrishipj&count=2"));
+        System.out.println("get request:" + EntityUtils.toString(httpResponse.getEntity()));
+
+        HttpResponse postResponse = httpHelper.httpPost(new URI("https://api.twitter.com/1.1/statuses/update.json?status=Hello"));
+
+        System.out.println("post Request:" + EntityUtils.toString(postResponse.getEntity()));
+
+    }
+
     public void environmentalValues() {
         consumer = new CommonsHttpOAuthConsumer(consumerKey, consumerSecret);
         consumer.setTokenWithSecret(accessToken, tokenSecret);
@@ -53,18 +66,5 @@ public class TwitterApplication {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public static void main(String[] args) throws IOException, URISyntaxException {
-        TwitterApplication twitterApplication = new TwitterApplication();
-//        twitterApplication.environmentalValues();
-
-        HttpHelper httpHelper = new TwitterHttpHelper(twitterApplication.consumerKey, twitterApplication.consumerSecret, twitterApplication.accessToken, twitterApplication.tokenSecret);
-//        HttpResponse httpResponse = twitterHttpHelper.httpGet(new URI("https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=ashwinrishipj&count=2"));
-//        System.out.println(EntityUtils.toString(httpResponse.getEntity()));
-
-        TwitterDao twitterDao = new TwitterDao(httpHelper);
-
-
     }
 }

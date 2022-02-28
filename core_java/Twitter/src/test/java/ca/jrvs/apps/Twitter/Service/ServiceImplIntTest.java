@@ -35,7 +35,7 @@ public class ServiceImplIntTest {
   }
 
   @Test
-  public void shouldPostTweet() {
+  public void postTweet() {
     Tweet tweetWillBePosted = TweetUtil.buildTweet("post tweet Int Testing " + System.currentTimeMillis(),
         30.0f, 31.0f);
 
@@ -51,7 +51,7 @@ public class ServiceImplIntTest {
   }
 
   @Test
-  public void shouldDeleteTweet() {
+  public void deleteTweet() {
     Tweet deleteTweet = TweetUtil.buildTweet(
         "Deleting post " + System.currentTimeMillis(), 50.0f, 51.0f);
    
@@ -60,5 +60,4 @@ public class ServiceImplIntTest {
 
     assertEquals(deletedTweet.getText(), id);
   }
-
 }

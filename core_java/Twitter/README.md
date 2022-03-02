@@ -1,6 +1,6 @@
 # Introduction
 
-To produce, read, and delete Tweets, this application uses the Twitter API v1.1. Development of Application involves using Java SprinbBoot, and the type of actions to be performed is specified as user input in the command line. This application is also run in a Docker container.Applications are managed through maven.
+To produce, read, and delete Tweets, this application is developed which uses the Twitter API v1.1. Development of Application involves using Java SpringBoot, and the type of actions to be performed is specified as user input in the command line. This application also runs in a Docker container.Applications are managed through maven.
 
 # Quick Start
 
@@ -27,7 +27,7 @@ Run Commands:
 
 # Implementation
 
-The following section explains the er diagram, design patterns, testing, and Deployment to perform the Create, read and delete operations.
+The following section explains the class diagram, design patterns, testing, and Deployment to perform the Create, read and delete operations.
 
 ## UML diagram
 

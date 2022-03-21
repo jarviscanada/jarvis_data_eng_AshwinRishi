@@ -25,9 +25,9 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_AshwinRish
 
 
 ## Highlighted Projects
-**Hospital Management System.** [[GitHub](https://github.com/ashwinrishipj/HMS)]: Developed an appointment tracker that can chat and mail with the individual doctors. We can view and schedule appointments along with edit, deleting, inserting, and updating To-do List and notes. Built a secured login authentication with the blockchain along with JWT to improve the security by over 50%. Implemented a Covid-tracker with news updates along with the calendar of events for each specific event.
+**Sentimental Prediction of Users Perspective through Live Streaming: Text and Video analysis.** [[GitHub](https://github.com/ashwinrishipj/thesis)]: Developer an algorithm which calculates the sentimental score and assigns an integer value for the word or sentence given by the user. That integer is used to calculate the score for the word given; based upon the sentimental score calculated, and we categorize the result as positive or negative. We use the Jeffrey Breen approach, which helps find the semantic orientation of the words in the streaming websites like Twitter and YouTube using the API.
 
-**News Display & To-do List:** [[GitHub](https://github.com/ashwinrishipj/netlify-todo)]: have used JavaScript to build a To-do List that stores completed and pending task lists. Implemented the background using particle-js and Bootstrap to align the view for Mobile and web layout. Stores the data in local storage and retrieves the data each time an update is made on to the list & news data with animation with logout in HTML file.
+**News Display & To-do List:** [[GitHub](https://github.com/ashwinrishipj/netlify-todo)]: Have used JavaScript to build a To-do List that stores completed and pending task lists. Implemented the background using particle-js and Bootstrap to align the view for Mobile and web layout. Stores the data in local storage and retrieves the data each time an update is made on to the list & news data with animation with logout in HTML file.
 
 
 ## Professional Experiences

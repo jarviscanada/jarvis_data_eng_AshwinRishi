@@ -42,12 +42,12 @@ jarvis_projects:
       - "Twitter Application: To produce, read, and delete Tweets, this application is developed which uses the Twitter API v1.1. Development of Application involves using Java SpringBoot, and the type of actions to be performed is specified as user input in the command line. This application also runs in a Docker container.Applications are managed through maven."
 
 highlighted_projects:
-  - name: "Hospital Management System."
-    git_url: "https://github.com/ashwinrishipj/HMS"
-    description: Developed an appointment tracker that can chat and mail with the individual doctors. We can view and schedule appointments along with edit, deleting, inserting, and updating To-do List and notes. Built a secured login authentication with the blockchain along with JWT to improve the security by over 50%. Implemented a Covid-tracker with news updates along with the calendar of events for each specific event.
+  - name: "Sentimental Prediction of Users Perspective through Live Streaming: Text and Video analysis."
+    git_url: "https://github.com/ashwinrishipj/thesis"
+    description: Developer an algorithm which calculates the sentimental score and assigns an integer value for the word or sentence given by the user. That integer is used to calculate the score for the word given; based upon the sentimental score calculated, and we categorize the result as positive or negative. We use the Jeffrey Breen approach, which helps find the semantic orientation of the words in the streaming websites like Twitter and YouTube using the API.
   - name: "News Display & To-do List:"
     git_url: "https://github.com/ashwinrishipj/netlify-todo"
-    description: have used JavaScript to build a To-do List that stores completed and pending task lists. Implemented the background using particle-js and Bootstrap to align the view for Mobile and web layout. Stores the data in local storage and retrieves the data each time an update is made on to the list & news data with animation with logout in HTML file.
+    description: Have used JavaScript to build a To-do List that stores completed and pending task lists. Implemented the background using particle-js and Bootstrap to align the view for Mobile and web layout. Stores the data in local storage and retrieves the data each time an update is made on to the list & news data with animation with logout in HTML file.
 
 professional_experience:
   - title: "Software Engineer."
@@ -95,3 +95,4 @@ others:
     bullets:
       - "Reading Poems and novels"
       - "playing Archery and Cricket"
+

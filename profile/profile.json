@@ -25,7 +25,7 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_AshwinRishi",
   "highlighted_projects": [
     {
-      "description": "Developer an algorithm which calculates the sentimental score and assigns an integer value for the word or sentence given by the user. That integer is used to calculate the score for the word given; based upon the sentimental score calculated, and we categorize the result as positive or negative. We use the Jeffrey Breen approach, which helps find the semantic orientation of the words in the streaming websites like Twitter and YouTube using the API.",
+      "description": "Developed an algorithm which calculates the sentimental score and assigns an integer value for the word or sentence given by the user. That integer is used to calculate the score for the word given; based upon the sentimental score calculated, and we categorize the result as positive or negative. We use the Jeffrey Breen approach, which helps find the semantic orientation of the words in the streaming websites like Twitter and YouTube using the API.",
       "git_url": "https://github.com/ashwinrishipj/thesis",
       "name": "Sentimental Prediction of Users Perspective through Live Streaming: Text and Video analysis."
     },

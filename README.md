@@ -25,7 +25,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_AshwinRish
 
 
 ## Highlighted Projects
-**Sentimental Prediction of Users Perspective through Live Streaming: Text and Video analysis.** [[GitHub](https://github.com/ashwinrishipj/thesis)]: Developer an algorithm which calculates the sentimental score and assigns an integer value for the word or sentence given by the user. That integer is used to calculate the score for the word given; based upon the sentimental score calculated, and we categorize the result as positive or negative. We use the Jeffrey Breen approach, which helps find the semantic orientation of the words in the streaming websites like Twitter and YouTube using the API.
+**Sentimental Prediction of Users Perspective through Live Streaming: Text and Video analysis.** [[GitHub](https://github.com/ashwinrishipj/thesis)]: Developed an algorithm which calculates the sentimental score and assigns an integer value for the word or sentence given by the user. That integer is used to calculate the score for the word given; based upon the sentimental score calculated, and we categorize the result as positive or negative. We use the Jeffrey Breen approach, which helps find the semantic orientation of the words in the streaming websites like Twitter and YouTube using the API.
 
 **News Display & To-do List:** [[GitHub](https://github.com/ashwinrishipj/netlify-todo)]: Have used JavaScript to build a To-do List that stores completed and pending task lists. Implemented the background using particle-js and Bootstrap to align the view for Mobile and web layout. Stores the data in local storage and retrieves the data each time an update is made on to the list & news data with animation with logout in HTML file.
 

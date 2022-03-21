@@ -76,13 +76,13 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Have been working on multiple products and sprint backlogs. Developed and tested, and deployed Linux, Java, and DevOps projects. Have used docker to implement projects.",
+      "description": "Have been working on multiple products and sprint backlogs. Developed and tested, and deployed Linux, Java, and Database projects. Have used docker to implement projects and collaborated on a scrum team within Agile Environment as a developer.",
       "duration": "2021 - present",
       "title": "Software Engineer."
     },
     {
       "company": "Cambrian College.",
-      "description": "Developed an appointment tracker that can chat and mail with the individual doctors. We can view and schedule appointments and edit, delete, insert, and update To-do List and notes.Built a secured login authentication with the blockchain along with JWT to improve the security by over 50%, implemented a Covid-tracker with news updates along with the calendar of events for each specific event. Demo: https://ashwinrishipj.github.io/HMS/.Have created a Student Monitoring application using Angular + SpringBoot(Java), which handles CRUD operations with MongoDB in Cloud. I have used Builder pattern and concurrency methods using threads, volatile, and Synchronization techniques in Java to handle multiple requests",
+      "description": "Developed an appointment tracker that can chat and mail with the individual doctors. We can view and schedule appointments and edit, delete, insert, and update To-do List and notes.Built a secured login authentication with the blockchain along with JWT to improve the security by over 50%, implemented a Covid-tracker with news updates along with the calendar of events for each specific event. Demo: https://ashwinrishipj.github.io/HMS/ .Have created a Student Monitoring application using Angular + SpringBoot(Java), which handles CRUD operations with MongoDB in Cloud. I have used Builder pattern and concurrency methods using threads, volatile, and Synchronization techniques in Java to handle multiple requests",
       "duration": "2020 - 2021",
       "title": "Capstone Project:Mobile Application \u0026 Development"
     },
